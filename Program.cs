@@ -6,12 +6,12 @@
         Console.WriteLine("Padre, metodo da non estendere.");
     }
 
-    public void MtodoDaEstendere1()
+    public void MetodoDaEstendere1()
     {
         Console.WriteLine("Padre, metodo da estendere 1.");
     }
 
-    public void MtodDaoEstendere2()
+    public void MetodoDaEstendere2()
     {
         Console.WriteLine("Padre, metodo da estendere 2.");
     }
@@ -25,7 +25,7 @@ public class Figlio : Padre
 
 
     // sovrascrive, nasconde il metodo nella classe padre
-    public new void MtodDaoEstendere2()
+    public new void MetodoDaEstendere2()
     {
         Console.WriteLine("Figlio, metodo esteso 2.");
     }
@@ -39,12 +39,12 @@ public class TheMain
         Figlio son = new Figlio();
 
         //father.metodoDaNonEstendere();   // Non è possibile richiamarlo è privato
-        father.MtodoDaEstendere1();        // dalla classe padre
-        father.MtodDaoEstendere2();        // dalla classe padre
+        father.MetodoDaEstendere1();        // dalla classe padre
+        father.MetodoDaEstendere2();        // dalla classe padre
 
         //son.metodoDaNonEstendere();      // Non è possibile richiamarlo è privato
-        son.MtodoDaEstendere1();           // dalla classe padre 
-        son.MtodDaoEstendere2();           // dalla classe figlio 
+        son.MetodoDaEstendere1();           // dalla classe padre 
+        son.MetodoDaEstendere2();           // dalla classe figlio 
 
     }
 }
